@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+
+    <body>
+        <div id="root"></div>
+    </body>
+    <script>
+        function changeMargin() {
+            //获取网页可见区域宽度
+            var docWidth = document.body.clientWidth;
+            document.getElementsByTagName('html')[0].style.fontSize = docWidth / 75 + 'px'
+        }
+        //加载页面时执行一次
+        changeMargin();
+        //监听浏览器宽度的改变
+        window.onresize = function () {
+            changeMargin();
+        };
+    </script>
+
+</html>

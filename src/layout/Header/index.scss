@@ -1,0 +1,68 @@
+.t_npx_header {
+    background: #108ee9;
+    display: flex;
+    justify-content: space-between;
+    .logoBox {
+        display: flex;
+        padding: 16px;
+        width: 208px;
+        height: 64px;
+        .img {
+            width: 32px;
+            height: 32px;
+        }
+        .name {
+            display: inline-block;
+            height: 32px;
+            color: #fff;
+            margin: 0 0 0 12px;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 32px;
+            vertical-align: middle;
+            animation: pro-layout-title-hide 0.3s;
+        }
+    }
+    .headRight {
+        padding: 0 16px;
+        line-height: 64px;
+        display: flex;
+        .icon {
+            padding: 0 12px;
+            cursor: pointer;
+        }
+        .noneSelect {
+            display:inline-block;
+            vertical-align: middle;
+            width: 0px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .showSelect {
+            display:inline-block;
+            vertical-align: middle;
+            overflow: hidden;
+            width: 200px;
+            transition: all 0.3s;
+        }
+        .userInformation {
+            margin: 0 12px;
+            cursor: pointer;
+            .userBox {
+                display: inline-block;
+                width: 32px;
+                border-radius: 50%;
+                margin-right: 8px;
+                .userImg {
+                    width: 100%;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .lang {
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+        }
+    }
+}
